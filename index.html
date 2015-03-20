@@ -16,36 +16,663 @@
 	<!-- <div id="container"> -->
 		<div class="align">
 			<ol>
-				<li>June S. &mdash; 5</li>
-				<li>Bo-Won K. &mdash; 5</li>
-				<li>Christina W. &mdash; 5</li>
-				<li>James C. &mdash; 5</li>
-				<li>Kyle G. &mdash; 5</li>
-				<li>Diane L. &mdash; 5</li>
-				<li>Prin L. &mdash; 5</li>
-				<li>Viviane J. &mdash; 5</li>
-				<li>Jordyn A. &mdash; 5</li>
-				<li>Ojus D. &mdash; 5</li>
-				<li>Rachel H. &mdash; 5</li>
-				<li>Ben S. &mdash; 4</li>
-				<li>Kelly W. &mdash; 4</li>
-				<li>Sarah M. &mdash; 4</li>
-				<li>Llewellyn H. &mdash; 4</li>				
-				<li>Becca L. &mdash; 4</li>
-				<li>Drew L. &mdash; 4</li>
-				<li>Amanda P. &mdash; 4</li>
-				<li>Gabe M. &mdash; 4</li>
-				<li>Michael M. &mdash; 3</li>
-				<li>Minkyoung K. &mdash; 3</li>
-				<li><span>Jamar B. &mdash; 3</span></li>
-				<li>Desmond P. &mdash; 3</li>
-				<li>Barack O. &mdash; 3</li>
-				<li>Elizabeth L. &mdash; 2</li>
-				<li>Lisa M. &mdash; 2</li> 
-				<li>Cem E. &mdash; 2</li>
+				<li id="js">June S. &mdash; 5</li>
+				<li id="bk">Bo-Won K. &mdash; 5</li>
+				<li id="cw">Christina W. &mdash; 5</li>
+				<li id="jc">James C. &mdash; 5</li>
+				<li id="kg">Kyle G. &mdash; 5</li>
+				<li id="dl">Diane L. &mdash; 5</li>
+				<li id="pl">Prin L. &mdash; 5</li>
+				<li id="vj">Viviane J. &mdash; 5</li>
+				<li id="ja">Jordyn A. &mdash; 5</li>
+				<li id="od">Ojus D. &mdash; 5</li>
+				<li id="rh">Rachel H. &mdash; 5</li>
+				<li id="bs">Ben S. &mdash; 4</li>
+				<li id="kw">Kelly W. &mdash; 4</li>
+				<li id="sm">Sarah M. &mdash; 4</li>
+				<li id="lh">Llewellyn H. &mdash; 4</li>				
+				<li id="bl">Becca L. &mdash; 4</li>
+				<li id="dd">Drew L. &mdash; 4</li>
+				<li id="ap">Amanda P. &mdash; 4</li>
+				<li id="gm">Gabe M. &mdash; 4</li>
+				<li id="mm">Michael M. &mdash; 3</li>
+				<li id="mk">Minkyoung K. &mdash; 3</li>
+				<li id="jb"><span>Jamar B. &mdash; 3</span></li>
+				<li id="dp">Desmond P. &mdash; 3</li>
+				<li id="bo">Barack O. &mdash; 3</li>
+				<li id="el">Elizabeth L. &mdash; 2</li>
+				<li id="lm">Lisa M. &mdash; 2</li> 
+				<li id="ce">Cem E. &mdash; 2</li>
 			</ol>
 			<p>Pink highlight means the team you chose to win has been eliminated...</p>
 		</div>
 	<!-- </div> -->
+	         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+        <script type="text/javascript">
+
+			document.getElementById('js').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>Tied for first!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+
+			document.getElementById('bk').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>Tied for first!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+
+			document.getElementById('cw').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>Tied for first!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+
+			document.getElementById('jc').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>Tied for first!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+
+			document.getElementById('kg').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>5 for 8 isn't the worst</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+
+			document.getElementById('dl').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>Tied for first!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+
+			document.getElementById('pl').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>Tied for first! (For now)</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+
+			document.getElementById('vj').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>Tied for first!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+
+			document.getElementById('ja').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>Tied for first!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+
+			document.getElementById('od').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>Probably won't win...</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+
+			document.getElementById('rh').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>Tied for first!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+
+			document.getElementById('bs').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>Not bad for a rookie!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+
+			document.getElementById('kw').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>You're doing fantastic!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+
+			document.getElementById('sm').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>You're doing great!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+
+			document.getElementById('lh').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>Sorry about VCU :-(</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+
+			document.getElementById('bl').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>Future winner!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+
+			document.getElementById('dd').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>You're doing great!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+
+			document.getElementById('ap').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>Slow and steady!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+
+			document.getElementById('gm').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>Original choice was Baylor...</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+
+			document.getElementById('mm').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>Not doing very well...</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+
+			document.getElementById('mk').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>OOO Crispy!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+
+			document.getElementById('jb').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>Northern Florida?!?!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+
+			document.getElementById('dp').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>You're doing great!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+
+			document.getElementById('bo').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>I'm the PRESIDENT!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+
+			document.getElementById('el').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>Last place wins money!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+
+			document.getElementById('lm').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>Last place wins money!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+			document.getElementById('ce').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>Last place wins money!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
+
+
+        </script>
 </body>
 </html>
