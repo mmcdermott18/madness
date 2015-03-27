@@ -15,35 +15,36 @@
 	</header>
 	<!-- <div id="container"> -->
 		<div class="align">
-			<p>(Place), (Your Name) (emdash) (number you picked right out of 32)</p>
+			<p>(Place), (Your Name) (emdash) (number you picked right out of 52)</p>
 			<ol>
-				<li id="kg">Kyle G. &mdash; 37</li>
-				<li id="rh">Rachel H. &mdash; 33</li>
-				<li id="jc"><span>James C. &mdash; 32</span></li>
-				<li id="bo">Barack O. &mdash; 32</li>
-				<li id="bs"><span>Ben S. &mdash; 32</span></li>
-				<li id="gm"><span>Gabe M. &mdash; 32</span></li>
-				<li id="od">Ojus D. &mdash; 31</li>
-				<li id="vj">Viviane J. &mdash; 31</li>
-				<li id="js">June S. &mdash; 30</li>
+				<li id="ds">Doug S. &mdash; 42</li>
+				<li id="kg">Kyle G. &mdash; 41</li>
+				<li id="jc"><span>James C. &mdash; 36</span></li>
+				<li id="bo">Barack O. &mdash; 35</li>
+				<li id="rh">Rachel H. &mdash; 34</li>
+				<li id="js">June S. &mdash; 34</li>
+				<li id="bs"><span>Ben S. &mdash; 33</span></li>
+				<li id="gm"><span>Gabe M. &mdash; 33</span></li>
+				<li id="od">Ojus D. &mdash; 33</li>
+				<li id="lh"><span>Llewellyn H. &mdash; 32</span></li>
+				<li id="vj">Viviane J. &mdash; 32</li>
+				<li id="bk">Bo-Won K. &mdash; 31</li>
+				<li id="mm">Michael M. &mdash; 31</li>
 				<li id="dd">Drew L. &mdash; 30</li>
-				<li id="lh"><span>Llewellyn H. &mdash; 30</span></li>
-				<li id="bk">Bo-Won K. &mdash; 29</li>
-				<li id="mm">Michael M. &mdash; 29</li>
-				<li id="dl">Diane L. &mdash; 28</li>
-				<li id="sm">Sarah M. &mdash; 28</li>
-				<li id="ja"><spam>Jordyn A. &mdash; 28</spam></li>
-				<li id="pl"><span>Prin L. &mdash; 27</span></li>
-				<li id="ap">Amanda P. &mdash; 27</li>
-				<li id="ce"><span>Cem E. &mdash; 27</span></li>
-				<li id="mk">Minkyoung K. &mdash; 26</li>
-				<li id="dp">Desmond P. &mdash; 25</li>
-				<li id="bl">Becca L. &mdash; 25</li>
-				<li id="kw">Kelly W. &mdash; 23</li>
-				<li id="cw"><span>Christina W. &mdash; 22</span></li>
-				<li id="jb"><span>Jamar B. &mdash; 22</span></li>
+				<li id="mk">Minkyoung K. &mdash; 30</li>
+				<li id="sm">Sarah M. &mdash; 29</li>
+				<li id="dl">Diane L. &mdash; 29</li>
+				<li id="ja"><spam>Jordyn A. &mdash; 29</spam></li>
+				<li id="pl"><span>Prin L. &mdash; 29</span></li>
+				<li id="bl">Becca L. &mdash; 29</li>
+				<li id="dp">Desmond P. &mdash; 28</li>
+				<li id="ap">Amanda P. &mdash; 28</li>
+				<li id="ce"><span>Cem E. &mdash; 28</span></li>
+				<li id="kw">Kelly W. &mdash; 25</li>
+				<li id="jb"><span>Jamar B. &mdash; 25</span></li>
+				<li id="cw"><span>Christina W. &mdash; 24</span></li>
 				<li id="lm">Lisa M. &mdash; 22</li> 
-				<li id="el">Elizabeth L. &mdash; 21</li>
+				<li id="el">Elizabeth L. &mdash; 22</li>
 
 
 			</ol>
@@ -54,6 +55,29 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 
         <script type="text/javascript">
+
+        	document.getElementById('ds').addEventListener('click', function() {
+				$(function makeDiv(){
+			    	var divsize = (400);
+			    	$newdiv = $('<div/>').css({
+				        'width':(600)+'px',
+				        'height':(40)+'px',
+				        'background-color': 'none'
+				    });
+			    
+			    	var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+			    	var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+			    
+			    	$newdiv.css({
+				        'position':'absolute',
+				        'left':posx+'px',
+				        'top':posy+'px',
+				        'display':'none'
+				    }).append( "<h5>Late entry!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				       $(this).remove();
+			    	}); 
+				})();
+			});
 
 			document.getElementById('js').addEventListener('click', function() {
 				$(function makeDiv(){
@@ -164,7 +188,7 @@
 				        'left':posx+'px',
 				        'top':posy+'px',
 				        'display':'none'
-				    }).append( "<h5>Slowly pulling away!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				    }).append( "<h5>Overtaken by Doug!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
 				       $(this).remove();
 			    	}); 
 				})();
@@ -302,7 +326,7 @@
 				        'left':posx+'px',
 				        'top':posy+'px',
 				        'display':'none'
-				    }).append( "<h5>Second ain't bad!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				    }).append( "<h5>Still hanging around!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
 				       $(this).remove();
 			    	}); 
 				})();
@@ -325,7 +349,7 @@
 				        'left':posx+'px',
 				        'top':posy+'px',
 				        'display':'none'
-				    }).append( "<h5>Starting to doubt it's your first bracket...</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				    }).append( "<h5>Took some hits last round...</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
 				       $(this).remove();
 			    	}); 
 				})();
@@ -463,7 +487,7 @@
 				        'left':posx+'px',
 				        'top':posy+'px',
 				        'display':'none'
-				    }).append( "<h5>Middle of the pack!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				    }).append( "<h5>Still in the game!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
 				       $(this).remove();
 			    	}); 
 				})();
@@ -509,7 +533,7 @@
 				        'left':posx+'px',
 				        'top':posy+'px',
 				        'display':'none'
-				    }).append( "<h5>Doing below average...</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				    }).append( "<h5>Doing above average...</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
 				       $(this).remove();
 			    	}); 
 				})();
@@ -601,7 +625,7 @@
 				        'left':posx+'px',
 				        'top':posy+'px',
 				        'display':'none'
-				    }).append( "<h5>Mr. President, you're slipping!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				    }).append( "<h5>POTUS in 4th place...</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
 				       $(this).remove();
 			    	}); 
 				})();
@@ -624,7 +648,7 @@
 				        'left':posx+'px',
 				        'top':posy+'px',
 				        'display':'none'
-				    }).append( "<h5>Currently winning money!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				    }).append( "<h5>Currently tied for money!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
 				       $(this).remove();
 			    	}); 
 				})();
@@ -647,7 +671,7 @@
 				        'left':posx+'px',
 				        'top':posy+'px',
 				        'display':'none'
-				    }).append( "<h5>Making a comeback!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
+				    }).append( "<h5>Currently tied for money!</h5>" ).appendTo( 'body' ).fadeIn(100).delay(2000).fadeOut(200, function(){
 				       $(this).remove();
 			    	}); 
 				})();
