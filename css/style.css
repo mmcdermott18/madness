@@ -21,17 +21,50 @@ header {
 	z-index: 3;
 	clear: both;
 	border-bottom: 3px white solid;
+	display: none;
 }
-
+audio {
+	display: none;
+}
 header h1 {
 	margin: 0;
 	color: deeppink;
 }
+.final {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0; 
+	left: 0; 
+	right: 0;
+	margin-top: 10%;
+}
+
+.final h1, .viviane h1, .dollar h1 {
+	font-size: 100px;
+	text-align: center;
+}
+.viviane, .drew, .sarah, .lisa, .kyle, .liz, .dollar {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0; 
+	left: 0; 
+	right: 0;
+	margin-top: 10%;
+	display: none;
+}
+.drew h1, .sarah h1, .lisa h1, .kyle h1, .liz h1 {
+	font-size: 60px;
+	text-align: center;
+}
+
 
 .align {
 	width: 90%;
 	margin: 0 auto;
 	padding: 15px 0;
+	display: none;
 }
 
 #container {
