@@ -213,7 +213,7 @@
       S10bt = S413t;
       S10bs = S413s;
     });
-        $('#S56').click(function() {
+      $('#S56').click(function() {
       $('#S11at').empty().append(S56t);
       $('#S11as').empty().append(S56s);
       $('#S14at').empty();
@@ -244,8 +244,8 @@
       $('#FG1bs').empty();
       $('#S116t').attr('data-teamname', S0at);
       $('#S116s').attr('data-seed', S0as);
-      S116t = S0at;
-      S116s = S0as;
+      S511t = S0at;
+      S511s = S0as;
     });
     $('#S0b').click(function() {
       $('#S511t').empty().append(S0bt);
@@ -262,8 +262,8 @@
       $('#FG1bs').empty();
       $('#S116t').attr('data-teamname', S0bt);
       $('#S116s').attr('data-seed', S0bs);
-      S116t = S0bt;
-      S116s = S0bs;
+      S511t = S0bt;
+      S511s = S0bs;
     });
     $('#S511').click(function() {
       $('#S11at').empty().append(S511t);

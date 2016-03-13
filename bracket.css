@@ -278,11 +278,11 @@ body h4 {
   color: #666;
 }
 form { margin-left: 325px;}
-input {width: 300px;}
 h1 { text-align: center;}
 .underline{ border-bottom: 3px solid black;}
 p {cursor: pointer}
 input[type="text"] {
+  width: 300px;
   display: block;
   margin: 0;
   font-family: 'Roboto Condensed', sans-serif;
@@ -301,5 +301,48 @@ input[type="text"] {
 input[type="text"]:focus {
   outline: none;
 }
-
+#finalscoretop {
+  position: relative;
+  top: -30px;
+  left: -272px;
+}
+#finalscoretop input[type="text"], #finalscorebottom input[type="text"] {
+  width: 50px;
+  display: block;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  background-color: powderblue;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px dotted black;
+}
+#finalscorebottom {
+  position: relative;
+  top: 70px;
+  left: -272px;
+}
+#finalscorebottom input[type="text"] {
+  width: 50px;
+  display: block;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  background-color: powderblue;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px dotted black;
+}
 
