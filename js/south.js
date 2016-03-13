@@ -1,7 +1,7 @@
   $(document).ready(function() {
-    var S0at = "Play In A"
+    var S0at = "Vanderbilt"
     var S0as = "11 "
-    var S0bt = "Play In B"
+    var S0bt = "Witchita State"
     var S0bs = "11 "
     var S11t = "Kansas";
     var S11s = "1 ";
@@ -53,10 +53,8 @@
     var S12bs = "";
     $('#S11t').append(S11t);
     $('#S11s').append(S11s);
-    $('#S0at').append(S0at);
-    $('#S0as').append(S0as);
-    $('#S0bt').append(S0bt);
-    $('#S0bs').append(S0bs);
+    $('#S116t').append(S116t);
+    $('#S116s').append(S116s);
     $('#S28t').append(S28t);
     $('#S28s').append(S28s);
     $('#S29t').append(S29t);
@@ -71,8 +69,10 @@
     $('#S413s').append(S413s);
     $('#S56t').append(S56t);
     $('#S56s').append(S56s);
-    $('#S511t').append(S511t);
-    $('#S511s').append(S511s);
+    $('#S0at').append(S0at);
+    $('#S0as').append(S0as);
+    $('#S0bt').append(S0bt);
+    $('#S0bs').append(S0bs);
     $('#S63t').append(S63t);
     $('#S63s').append(S63s);
     $('#S614t').append(S614t);
@@ -85,42 +85,6 @@
     $('#S82s').append(S82s);
     $('#S815t').append(S815t);
     $('#S815s').append(S815s);
-    $('#S0a').click(function() {
-      $('#S116t').empty().append(S0at);
-      $('#S116s').empty().append(S0as);
-      $('#S9at').empty();
-      $('#S9as').empty();
-      $('#S13at').empty();
-      $('#S13as').empty();
-      $('#S15at').empty();
-      $('#S15as').empty();
-      $('#FF2at').empty();
-      $('#FF2as').empty();
-      $('#FG1bt').empty();
-      $('#FG1bs').empty();
-      $('#S116t').attr('data-teamname', S0at);
-      $('#S116s').attr('data-seed', S0as);
-      S116t = S0at;
-      S116s = S0as;
-    });
-    $('#S0b').click(function() {
-      $('#S116t').empty().append(S0bt);
-      $('#S116s').empty().append(S0bs);
-      $('#S9at').empty();
-      $('#S9as').empty();
-      $('#S13at').empty();
-      $('#S13as').empty();
-      $('#S15at').empty();
-      $('#S15as').empty();
-      $('#FF2at').empty();
-      $('#FF2as').empty();
-      $('#FG1bt').empty();
-      $('#FG1bs').empty();
-      $('#S116t').attr('data-teamname', S0bt);
-      $('#S116s').attr('data-seed', S0bs);
-      S116t = S0bt;
-      S116s = S0bs;
-    });
     $('#S11').click(function() {
       $('#S9at').empty().append(S11t);
       $('#S9as').empty().append(S11s);
@@ -264,6 +228,42 @@
       $('#S11as').attr('data-seed', S56s);
       S11at = S56t;
       S11as = S56s;
+    });
+    $('#S0a').click(function() {
+      $('#S511t').empty().append(S0at);
+      $('#S511s').empty().append(S0as);
+      $('#S11at').empty();
+      $('#S11as').empty();
+      $('#S13at').empty();
+      $('#S13as').empty();
+      $('#S15at').empty();
+      $('#S15as').empty();
+      $('#FF2at').empty();
+      $('#FF2as').empty();
+      $('#FG1bt').empty();
+      $('#FG1bs').empty();
+      $('#S116t').attr('data-teamname', S0at);
+      $('#S116s').attr('data-seed', S0as);
+      S116t = S0at;
+      S116s = S0as;
+    });
+    $('#S0b').click(function() {
+      $('#S511t').empty().append(S0bt);
+      $('#S511s').empty().append(S0bs);
+      $('#S11at').empty();
+      $('#S11as').empty();
+      $('#S14at').empty();
+      $('#S14as').empty();
+      $('#S15bt').empty();
+      $('#S15bs').empty();
+      $('#FF2at').empty();
+      $('#FF2as').empty();
+      $('#FG1bt').empty();
+      $('#FG1bs').empty();
+      $('#S116t').attr('data-teamname', S0bt);
+      $('#S116s').attr('data-seed', S0bs);
+      S116t = S0bt;
+      S116s = S0bs;
     });
     $('#S511').click(function() {
       $('#S11at').empty().append(S511t);

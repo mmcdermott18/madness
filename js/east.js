@@ -21,8 +21,12 @@
     var E413s = "13 ";
     var E56t = "Notre Dame";
     var E56s = "6 ";
-    var E511t = "Option 11";
-    var E511s = "11 ";
+    var E511at = "Michigan"
+    var E511as = "11 "
+    var E511bt = "Tulsa"
+    var E511bs = "11 "
+    var E511t = "";
+    var E511s = "";
     var E63t = "West Virginia";
     var E63s = "3 ";
     var E614t = "SFA";
@@ -71,8 +75,10 @@
     $('#E413s').append(E413s);
     $('#E56t').append(E56t);
     $('#E56s').append(E56s);
-    $('#E511t').append(E511t);
-    $('#E511s').append(E511s);
+    $('#E511at').append(E511at);
+    $('#E511as').append(E511as);
+    $('#E511bt').append(E511bt);
+    $('#E511bs').append(E511bs);
     $('#E63t').append(E63t);
     $('#E63s').append(E63s);
     $('#E614t').append(E614t);
@@ -264,6 +270,42 @@
       $('#E11as').attr('data-seed', E56s);
       E11at = E56t;
       E11as = E56s;
+    });
+    $('#E511a').click(function() {
+      $('#E511t').empty().append(E511at);
+      $('#E511s').empty().append(E511as);
+      $('#E11at').empty();
+      $('#E11as').empty();
+      $('#E13at').empty();
+      $('#E13as').empty();
+      $('#E15at').empty();
+      $('#E15as').empty();
+      $('#FF2at').empty();
+      $('#FF2as').empty();
+      $('#FG1bt').empty();
+      $('#FG1bs').empty();
+      $('#E511t').attr('data-teamname', E511at);
+      $('#E511s').attr('data-seed', E511as);
+      E511t = E511at;
+      E511s = E511as;
+    });
+    $('#E511b').click(function() {
+      $('#E511t').empty().append(E511bt);
+      $('#E511s').empty().append(E511bs);
+      $('#E11at').empty();
+      $('#E11as').empty();
+      $('#E14at').empty();
+      $('#E14as').empty();
+      $('#E15bt').empty();
+      $('#E15bs').empty();
+      $('#FF2at').empty();
+      $('#FF2as').empty();
+      $('#FG1bt').empty();
+      $('#FG1bs').empty();
+      $('#E511t').attr('data-teamname', E511bt);
+      $('#E511s').attr('data-seed', E511bs);
+      E511t = E511bt;
+      E511s = E511bs;
     });
     $('#E511').click(function() {
       $('#E11at').empty().append(E511t);

@@ -1,7 +1,7 @@
   $(document).ready(function() {
-    var W0at = "Play In A"
+    var W0at = "Holy Cross"
     var W0as = "16 "
-    var W0bt = "Play In B"
+    var W0bt = "Southern"
     var W0bs = "16 "
     var W11t = "Oregon";
     var W11s = "1 ";

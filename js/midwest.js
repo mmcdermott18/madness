@@ -1,8 +1,4 @@
   $(document).ready(function() {
-    var MW0at = "Play In A"
-    var MW0as = "16 "
-    var MW0bt = "Play In B"
-    var MW0bs = "16 "
     var MW11t = "UVA";
     var MW11s = "1 ";
     var MW116t = "Hampton";
@@ -53,10 +49,8 @@
     var MW12bs = "";
     $('#MW11t').append(MW11t);
     $('#MW11s').append(MW11s);
-    $('#MW0at').append(MW0at);
-    $('#MW0as').append(MW0as);
-    $('#MW0bt').append(MW0bt);
-    $('#MW0bs').append(MW0bs);
+    $('#MW116t').append(MW116t);
+    $('#MW116s').append(MW116s);
     $('#MW28t').append(MW28t);
     $('#MW28s').append(MW28s);
     $('#MW29t').append(MW29t);

@@ -67,7 +67,7 @@ body h4 {
   left: -125px;
 }
 #bracket #round1 .s0 {
-  top: 17px;
+  top: 175px;
   right: -125px;
 }
 #bracket #round1 .w0 {
@@ -76,6 +76,10 @@ body h4 {
 }
 #bracket #round1 .e0 {
   top: 375px;
+  right: -125px;
+}
+#bracket #round1 .e5a {
+  top: 535px;
   right: -125px;
 }
 #bracket #round1 .m1 {
