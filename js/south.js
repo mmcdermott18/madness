@@ -13,7 +13,7 @@
     var S29s = "9 ";
     var S35t = "Maryland";
     var S35s = "5 ";
-    var S312t = "South Dakota St";
+    var S312t = "S Dakota St";
     var S312s = "12 ";
     var S44t = "California";
     var S44s = "4 ";
