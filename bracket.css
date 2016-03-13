@@ -1,6 +1,9 @@
 /* =================== */
 /* bracket setup       */
 /* =================== */
+html {
+  background-color: powderblue;
+}
 body #content-wrapper {
   width: 950px;
   margin: 0 auto 15px;
@@ -11,7 +14,7 @@ body {
   text-transform: uppercase;
 }
 body h4 {
-  color: #777;
+  color: white;
   text-transform: uppercase;
 }
 
@@ -282,6 +285,7 @@ input[type="text"] {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
+  background-color: powderblue;
   appearance: none;
   box-shadow: none;
   border-radius: none;
