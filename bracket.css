@@ -275,5 +275,23 @@ input {width: 300px;}
 h1 { text-align: center;}
 .underline{ border-bottom: 3px solid black;}
 p {cursor: pointer}
+input[type="text"] {
+  display: block;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px dotted black;
+}
+input[type="text"]:focus {
+  outline: none;
+}
 
 
