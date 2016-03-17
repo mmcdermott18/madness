@@ -1,43 +1,35 @@
   $(document).ready(function() {
-    var E0at = "FGCU"
-    var E0as = "16 "
-    var E0bt = "FDU"
-    var E0bs = "16 "
-    var E11t = "UNC";
+    var E11t = "UVA";
     var E11s = "1 ";
-    var E116t = "";
-    var E116s = "";
-    var E28t = "USC";
+    var E116t = "Hampton";
+    var E116s = "16 ";
+    var E28t = "Texas Tech";
     var E28s = "8 ";
-    var E29t = "Providence";
+    var E29t = "Butler";
     var E29s = "9 ";
-    var E35t = "Indiana";
+    var E35t = "Purdue";
     var E35s = "5 ";
-    var E312t = "Chattanooga";
+    var E312t = "Little Rock";
     var E312s = "12 ";
-    var E44t = "Kentucky";
+    var E44t = "Iowa State";
     var E44s = "4 ";
-    var E413t = "Stony Brook";
+    var E413t = "Iona";
     var E413s = "13 ";
-    var E56t = "Notre Dame";
+    var E56t = "Seton Hall";
     var E56s = "6 ";
-    var E511at = "Michigan"
-    var E511as = "11 "
-    var E511bt = "Tulsa"
-    var E511bs = "11 "
-    var E511t = "";
-    var E511s = "";
-    var E63t = "West Virginia";
+    var E511t = "Gonzaga";
+    var E511s = "11 ";
+    var E63t = "Utah";
     var E63s = "3 ";
-    var E614t = "SFA";
+    var E614t = "Fresno State";
     var E614s = "14 ";
-    var E77t = "Wisconsin";
+    var E77t = "Dayton";
     var E77s = "7 ";
-    var E710t = "Pittsburgh";
+    var E710t = "Syracuse";
     var E710s = "10 ";
-    var E82t = "Xavier";
+    var E82t = "Michigan State";
     var E82s = "2 ";
-    var E815t = "Weber State";
+    var E815t = "Middle Tenn.";
     var E815s = "15 ";
     var E9at = "";
     var E9as = "";
@@ -57,10 +49,8 @@
     var E12bs = "";
     $('#E11t').append(E11t);
     $('#E11s').append(E11s);
-    $('#E0at').append(E0at);
-    $('#E0as').append(E0as);
-    $('#E0bt').append(E0bt);
-    $('#E0bs').append(E0bs);
+    $('#E116t').append(E116t);
+    $('#E116s').append(E116s);
     $('#E28t').append(E28t);
     $('#E28s').append(E28s);
     $('#E29t').append(E29t);
@@ -75,10 +65,8 @@
     $('#E413s').append(E413s);
     $('#E56t').append(E56t);
     $('#E56s').append(E56s);
-    $('#E511at').append(E511at);
-    $('#E511as').append(E511as);
-    $('#E511bt').append(E511bt);
-    $('#E511bs').append(E511bs);
+    $('#E511t').append(E511t);
+    $('#E511s').append(E511s);
     $('#E63t').append(E63t);
     $('#E63s').append(E63s);
     $('#E614t').append(E614t);
@@ -270,42 +258,6 @@
       $('#E11as').attr('data-seed', E56s);
       E11at = E56t;
       E11as = E56s;
-    });
-    $('#E511a').click(function() {
-      $('#E511t').empty().append(E511at);
-      $('#E511s').empty().append(E511as);
-      $('#E11at').empty();
-      $('#E11as').empty();
-      $('#E13at').empty();
-      $('#E13as').empty();
-      $('#E15at').empty();
-      $('#E15as').empty();
-      $('#FF2at').empty();
-      $('#FF2as').empty();
-      $('#FG1bt').empty();
-      $('#FG1bs').empty();
-      $('#E511t').attr('data-teamname', E511at);
-      $('#E511s').attr('data-seed', E511as);
-      E511t = E511at;
-      E511s = E511as;
-    });
-    $('#E511b').click(function() {
-      $('#E511t').empty().append(E511bt);
-      $('#E511s').empty().append(E511bs);
-      $('#E11at').empty();
-      $('#E11as').empty();
-      $('#E14at').empty();
-      $('#E14as').empty();
-      $('#E15bt').empty();
-      $('#E15bs').empty();
-      $('#FF2at').empty();
-      $('#FF2as').empty();
-      $('#FG1bt').empty();
-      $('#FG1bs').empty();
-      $('#E511t').attr('data-teamname', E511bt);
-      $('#E511s').attr('data-seed', E511bs);
-      E511t = E511bt;
-      E511s = E511bs;
     });
     $('#E511').click(function() {
       $('#E11at').empty().append(E511t);
@@ -510,7 +462,7 @@
       $('#E15bs').empty();
       $('#FF2bt').empty();
       $('#FF2bs').empty();
-      $('#FG1bt').empty();
+      $('#FG1bt').empty(); 
       $('#FG1bs').empty();
       $('#E14bt').attr('data-teamname', E12at);
       $('#E14bs').attr('data-seed', E12as);

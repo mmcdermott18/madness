@@ -1,39 +1,43 @@
   $(document).ready(function() {
-    var S0at = "Vanderbilt"
-    var S0as = "11 "
-    var S0bt = "Witchita State"
-    var S0bs = "11 "
-    var S11t = "Kansas";
+    var S0at = ""
+    var S0as = ""
+    var S0bt = ""
+    var S0bs = ""
+    var S11t = "UNC";
     var S11s = "1 ";
-    var S116t = "Austin Peay";
+    var S116t = "FGCU";
     var S116s = "16 ";
-    var S28t = "Colorado";
+    var S28t = "USC";
     var S28s = "8 ";
-    var S29t = "Connecticut";
+    var S29t = "Providence";
     var S29s = "9 ";
-    var S35t = "Maryland";
+    var S35t = "Indiana";
     var S35s = "5 ";
-    var S312t = "S Dakota St";
+    var S312t = "Chattanooga";
     var S312s = "12 ";
-    var S44t = "California";
+    var S44t = "Kentucky";
     var S44s = "4 ";
-    var S413t = "Hawaii";
+    var S413t = "Stony Brook";
     var S413s = "13 ";
-    var S56t = "Arizona";
+    var S56t = "Notre Dame";
     var S56s = "6 ";
-    var S511t = "";
-    var S511s = "";
-    var S63t = "Miami";
+    var S511at = ""
+    var S511as = ""
+    var S511bt = ""
+    var S511bs = ""
+    var S511t = "Michigan";
+    var S511s = "11 ";
+    var S63t = "West Virginia";
     var S63s = "3 ";
-    var S614t = "Bufalo";
+    var S614t = "SFA";
     var S614s = "14 ";
-    var S77t = "Iowa";
+    var S77t = "Wisconsin";
     var S77s = "7 ";
-    var S710t = "Temple";
+    var S710t = "Pittsburgh";
     var S710s = "10 ";
-    var S82t = "Villanova";
+    var S82t = "Xavier";
     var S82s = "2 ";
-    var S815t = "UNC Asheville";
+    var S815t = "Weber State";
     var S815s = "15 ";
     var S9at = "";
     var S9as = "";
@@ -43,10 +47,6 @@
     var S10as = "";
     var S10bt = "";
     var S10bs = "";
-    var S11at = "";
-    var S11as = "";
-    var S11bt = "";
-    var S11bs = "";
     var S12at = "";
     var S12as = "";
     var S12bt = "";
@@ -69,10 +69,8 @@
     $('#S413s').append(S413s);
     $('#S56t').append(S56t);
     $('#S56s').append(S56s);
-    $('#S0at').append(S0at);
-    $('#S0as').append(S0as);
-    $('#S0bt').append(S0bt);
-    $('#S0bs').append(S0bs);
+    $('#S511t').append(S511t);
+    $('#S511s').append(S511s);
     $('#S63t').append(S63t);
     $('#S63s').append(S63s);
     $('#S614t').append(S614t);
@@ -85,6 +83,42 @@
     $('#S82s').append(S82s);
     $('#S815t').append(S815t);
     $('#S815s').append(S815s);
+    $('#S0a').click(function() {
+      $('#S116t').empty().append(S0at);
+      $('#S116s').empty().append(S0as);
+      $('#S9at').empty();
+      $('#S9as').empty();
+      $('#S13at').empty();
+      $('#S13as').empty();
+      $('#S15at').empty();
+      $('#S15as').empty();
+      $('#FF2at').empty();
+      $('#FF2as').empty();
+      $('#FG1bt').empty();
+      $('#FG1bs').empty();
+      $('#S116t').attr('data-teamname', S0at);
+      $('#S116s').attr('data-seed', S0as);
+      S116t = S0at;
+      S116s = S0as;
+    });
+    $('#S0b').click(function() {
+      $('#S116t').empty().append(S0bt);
+      $('#S116s').empty().append(S0bs);
+      $('#S9at').empty();
+      $('#S9as').empty();
+      $('#S13at').empty();
+      $('#S13as').empty();
+      $('#S15at').empty();
+      $('#S15as').empty();
+      $('#FF2at').empty();
+      $('#FF2as').empty();
+      $('#FG1bt').empty();
+      $('#FG1bs').empty();
+      $('#S116t').attr('data-teamname', S0bt);
+      $('#S116s').attr('data-seed', S0bs);
+      S116t = S0bt;
+      S116s = S0bs;
+    });
     $('#S11').click(function() {
       $('#S9at').empty().append(S11t);
       $('#S9as').empty().append(S11s);
@@ -213,7 +247,7 @@
       S10bt = S413t;
       S10bs = S413s;
     });
-      $('#S56').click(function() {
+        $('#S56').click(function() {
       $('#S11at').empty().append(S56t);
       $('#S11as').empty().append(S56s);
       $('#S14at').empty();
@@ -229,9 +263,9 @@
       S11at = S56t;
       S11as = S56s;
     });
-    $('#S0a').click(function() {
-      $('#S511t').empty().append(S0at);
-      $('#S511s').empty().append(S0as);
+    $('#S511a').click(function() {
+      $('#S511t').empty().append(S511at);
+      $('#S511s').empty().append(S511as);
       $('#S11at').empty();
       $('#S11as').empty();
       $('#S13at').empty();
@@ -240,16 +274,16 @@
       $('#S15as').empty();
       $('#FF2at').empty();
       $('#FF2as').empty();
-      $('#FG1bt').empty();
+      $('#FG1bt').empty(); 
       $('#FG1bs').empty();
-      $('#S116t').attr('data-teamname', S0at);
-      $('#S116s').attr('data-seed', S0as);
-      S511t = S0at;
-      S511s = S0as;
+      $('#S511t').attr('data-teamname', S511at);
+      $('#S511s').attr('data-seed', S511as);
+      S511t = S511at;
+      S511s = S511as;
     });
-    $('#S0b').click(function() {
-      $('#S511t').empty().append(S0bt);
-      $('#S511s').empty().append(S0bs);
+    $('#S511b').click(function() {
+      $('#S511t').empty().append(S511bt);
+      $('#S511s').empty().append(S511bs);
       $('#S11at').empty();
       $('#S11as').empty();
       $('#S14at').empty();
@@ -260,10 +294,10 @@
       $('#FF2as').empty();
       $('#FG1bt').empty();
       $('#FG1bs').empty();
-      $('#S116t').attr('data-teamname', S0bt);
-      $('#S116s').attr('data-seed', S0bs);
-      S511t = S0bt;
-      S511s = S0bs;
+      $('#S511t').attr('data-teamname', S511bt);
+      $('#S511s').attr('data-seed', S511bs);
+      S511t = S511bt;
+      S511s = S511bs;
     });
     $('#S511').click(function() {
       $('#S11at').empty().append(S511t);
@@ -410,7 +444,7 @@
       $('#S13bs').empty().append(S10as);
       $('#S15at').empty();
       $('#S15as').empty();
-      $('#FF2at').empty();
+      $('#FF2at').empty(); 
       $('#FF2as').empty();
       $('#FG1bt').empty();
       $('#FG1bs').empty();

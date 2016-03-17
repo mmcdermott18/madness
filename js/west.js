@@ -1,12 +1,12 @@
   $(document).ready(function() {
-    var W0at = "Holy Cross"
-    var W0as = "16 "
-    var W0bt = "Southern"
-    var W0bs = "16 "
+    var W0at = "";
+    var W0as = "";
+    var W0bt = "";
+    var W0bs = "";
     var W11t = "Oregon";
     var W11s = "1 ";
-    var W116t = "";
-    var W116s = "";
+    var W116t = "Holy Cross";
+    var W116s = "16 ";
     var W28t = "ST Joseph's";
     var W28s = "8 ";
     var W29t = "Cincinnati";
@@ -53,10 +53,8 @@
     var W12bs = "";
     $('#W11t').append(W11t);
     $('#W11s').append(W11s);
-    $('#W0at').append(W0at);
-    $('#W0as').append(W0as);
-    $('#W0bt').append(W0bt);
-    $('#W0bs').append(W0bs);
+    $('#W116t').append(W116t);
+    $('#W116s').append(W116s);
     $('#W28t').append(W28t);
     $('#W28s').append(W28s);
     $('#W29t').append(W29t);
